@@ -1,0 +1,146 @@
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+    display: grid;
+    margin: 5px;
+  }
+
+  .print-card{
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(85, 77, 77, 0.08);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #B8B5E3;
+}
+
+
+
+  .print-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.Upload-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #f1f3f9;
+}
+  .back{
+          font-Size: 36px ;
+          cursor: pointer;
+          margin: 30px;
+  }
+  
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+}
+
+.view-shop-btn {
+  margin-top: 15px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #433D8B;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.print-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  padding: 20px;
+}
+
+.print-upload {
+  flex: 1;
+}
+
+.open-previewBOx {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  /* margin: 30px; */
+}
+
+
+
+
+@media (max-width: 768px) {
+.card-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+
+.print-card {
+  padding: 10px;
+  border-radius: 12px;
+}
+
+
+.view-shop-btn {
+  margin-top: 0px;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #433D8B;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+  /* Stack layout */
+  .print-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  /* Hide image completely */
+  .print-image {
+    display: none;
+  }
+
+  /* Full width upload card */
+  .Upload-card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  /* Smaller back icon */
+  .back {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  /* Headings scale down */
+  .heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  
+.open-previewBOx {
+  margin: 30px;
+}
+}
+
+

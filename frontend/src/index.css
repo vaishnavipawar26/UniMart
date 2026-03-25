@@ -1,0 +1,11 @@
+
+/* Hide scrollbar for horizontal lists */
+.horizontal-scroll {
+  overflow-x: scroll;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;               /* Chrome */
+}

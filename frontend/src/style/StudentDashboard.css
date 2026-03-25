@@ -1,0 +1,108 @@
+/* ITEM CONTAINER */
+
+.item-container {
+  margin: 10px;
+}
+
+.item-type {
+  color: #433D8B;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* HORIZONTAL SCROLL */
+
+.horizontal-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px 0;
+
+  scroll-behavior: smooth;
+
+  align-items: stretch;   
+}
+
+/* Hide scrollbar */
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* ITEM CARD WRAPPER */
+
+.item-card-wrapper {
+  flex: 0 0 160px;
+  display: flex;       
+}
+
+/* ITEM CARD */
+
+.item-card {
+  width: 100%;
+  height: 100%;             
+  
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+/* IMAGE */
+
+.item-image {
+  width: 100%;
+  height: 120px;        
+  object-fit: cover;
+}
+
+/* CONTENT */
+
+.item-info {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+/* Title */
+.item-name {
+  font-size: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Price */
+.item-price {
+  font-size: 14px;
+  color: #433D8B;
+  font-weight: bold;
+}
+
+
+/* TABLET */
+
+@media (min-width: 768px) {
+  .item-container {
+    margin: 30px 50px;
+  }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+  .item-container {
+    margin: 30px 50px;
+  }
+
+  .item-type {
+    font-size: 34px;
+  }
+}
